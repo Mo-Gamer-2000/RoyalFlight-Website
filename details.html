@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+     <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="css/style.css">
+     <title>Search Flights</title>
+     </head>
+     <body>
+          <header>
+               <nav>
+                   <ul>
+                    <li><a href="search.html">Go Back</a></li>
+                   </ul>
+               </nav>
+           </header>
+           <h1 class="passInfo"><span>Passenger Information</span></h1>
+          <div class="booking-form-box">
+               <h2 class="ticket1"><span>1. Passenger Ticket</span></h2>
+                   <div class="main-form">
+                         <form action="index.php" method="get">
+                              <div>
+                                   <span>Last Name: </span>
+                                   <input type="text" name="lname" id="lname" placeholder="Last name*" required>
+                              </div>
+                              <div>
+                                   <span>First Name: </span>
+                                   <input type="text" name="fname" id="fname" placeholder="First Name*" required>
+                              </div>
+                              <div>
+                                   <span>Travel Class: </span>
+                                   <select>
+                                        <option value="0">
+                                             Select Gender:
+                                        </option>
+                                        <option value="1">
+                                             Male
+                                        </option>
+                                        <option value="2">
+                                             Female
+                                        </option>
+                                   </select>
+                              </div>
+                              
+                              <div>
+                                   <span>Date of Birth: </span>
+                                   <input type="date" name="dob" id="dob" placeholder="Date of Birth*" required>
+                              </div>
+
+                              <div>
+                                   <span>Nationality: </span>
+                                   <select>
+                                        <option value="0">
+                                             Select Nationality:
+                                        </option>
+                                        <option value="1">
+                                             United Kingdom
+                                        </option>
+                                        <option value="2">
+                                             Italian
+                                        </option>
+                                   </select>
+                              </div>
+
+                              <div>
+                                   <span>ID Type: </span>
+                                   <select>
+                                        <option value="1">
+                                             Passport
+                                        </option>
+                                   </select>
+                              </div>
+
+                              <div>
+                                   <span>Passport Number: </span>
+                                   <input type="number" name="pnumber" id="pname" placeholder="Passport Number*" required>
+                              </div>
+
+                              <div>
+                                   <span>ID Expiration Date: </span>
+                                   <input type="date" name="date" id="date" placeholder="ID Expiration Date (Optional)*" required>
+                              </div>
+
+                              <div>
+                                   <span>Add an Adult</span>
+                                   <a class="addPass" href="#">Add a Passenger</a>
+                              </div>
+                         </form>
+                   </div>
+           </div>
+
+           <div class="booking-form-box">
+               <h2 class="ticket1"><span>Contact Details</span></h2>
+                    <div class="main-form">
+                    <form action="POST">
+                         <div>
+                              <span>Contact Name: </span>
+                              <input type="text" name="cname" id="cname" placeholder="Contact Name*" required>
+                         </div>
+                         <div>
+                              <span>Email: </span>
+                              <input type="email" name="email" id="email" placeholder="Email*" required>
+                         </div>
+                         <div>
+                              <span>Mobile Phone: </span>
+                              <input type="tel" name="phone" id="phone" placeholder="Mobile Number**" required>
+                         </div>
+                         <br>
+                                   <a class="checkoutBtn" href="checkout.html">Proceed to Checkout</a>
+                    </form>    
+               </div>         
+          </div>
+
+          <footer>
+               © 2022 Moeez Abdul.  All rights reserved.
+           </footer> 
+
+     </body>
+</html>
